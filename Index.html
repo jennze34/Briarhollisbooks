@@ -653,13 +653,27 @@ nav { padding: 1.2rem 1.5rem; }
 ```
 .hero {
   grid-template-columns: 1fr;
-  padding: 7rem 1.5rem 4rem;
+  padding: 6rem 1.5rem 4rem;
   text-align: center;
+  min-height: auto;
 }
-.hero-text { padding-right: 0; margin-bottom: 3rem; }
-.hero-body { margin: 0 auto 2rem; }
-.hero-image { justify-content: center; }
-.book-cover-wrap { width: 260px; }
+.hero-text { 
+  padding-right: 0; 
+  margin-bottom: 2.5rem;
+  order: 1;
+}
+.hero-title { font-size: 2.4rem; }
+.hero-body { 
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+}
+.hero-image { 
+  justify-content: center;
+  order: 2;
+}
+.book-cover-wrap { width: 220px; }
+.book-cover { min-height: 340px; padding: 2rem 1.5rem; }
+.book-cover-title { font-size: 1.5rem; }
 
 .about-section {
   grid-template-columns: 1fr;
